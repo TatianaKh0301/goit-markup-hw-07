@@ -1,0 +1,31 @@
+.advantages-list {
+    display: flex;
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__icon-wrap {
+        width: 270px;
+        height: 120px;
+        background-color: $secondary-bgcolor;
+        border-radius: 4px;
+        @extend %flex-ai-jc;
+        margin-bottom: 30px;
+    }
+    &__title {
+        @include font(null, null, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        color: $primary-text-color;
+        margin-bottom: 10px;
+    }
+    &__text {
+        @include font(null, null, 14px, 1.71, 0.03em);
+        color: $secondary-text-color;
+    }
+}
+
+
+
+
+
+
+

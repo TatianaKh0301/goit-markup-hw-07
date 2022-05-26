@@ -1,0 +1,105 @@
+.footer {
+    background-color: $hero-footer-bgcolor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+        &--color {
+            color: $primary-color;
+        }
+    }
+}
+
+.adress__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.adress__link {
+    @include font(null, null, 14px, 1.71, 0.03em);
+    &--adress-color {
+        color: $primary-color;
+    }
+    &--contact-color {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.container__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.adress-wrap {
+    flex-grow: 1;
+}
+
+.company-soc {
+    margin-left: 70px;
+    margin-right: 93px;
+    &__text {
+        @include font($primary-font, 700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item:not(:first-child) {
+        margin-left: 10px;
+    }
+    &__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $primary-color;
+        transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    }
+}
+
+.mail__text {
+    @include font(null, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.form-send {
+    display: flex;
+    &__input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 16px;
+        background-color: transparent;
+        margin-right: 12px;
+        &::placeholder {
+            @include font(null, null, 16px, 1.25, 0.03em);
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &__btn--send {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-left: 29px;
+        width: 200px;
+        height: 50px;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        @include font(null, 700, 16px, 1.88, 0.06em);
+        color: $primary-color;
+        border-color: transparent;
+    }
+    &__icon {
+        fill: $primary-color;
+        margin-left: 10px;
+    }
+}

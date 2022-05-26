@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body {
+    font-family: $primary-font, Tahoma, sans-serif;
+    background-color: $primary-color;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    @include font($secondary-font, 700, 26px, 1.19, 0.03em);
+    color: $accent-color;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.icon-soc-link {
+    width: 44px;
+    height: 44px;    
+    border-radius: 50%;
+    @extend %flex-ai-jc;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
