@@ -2,13 +2,14 @@
     background-color: $hero-footer-bgcolor;
     padding-top: 60px;
     padding-bottom: 60px;
-    &__logo {
+    .footer__logo {
         display: block;
-        margin-bottom: 30px;
-        &--color {
-            color: $primary-color;
-        }
+        margin-bottom: 30px;        
     }
+}
+
+.logo__footer--color {
+    color: $primary-color;
 }
 
 .adress__item:not(:last-child) {
@@ -17,12 +18,14 @@
 
 .adress__link {
     @include font(null, null, 14px, 1.71, 0.03em);
-    &--adress-color {
-        color: $primary-color;
-    }
-    &--contact-color {
-        color: rgba(255, 255, 255, 0.6);
-    }
+}
+
+.adress__link--adress-color {
+    color: $primary-color;
+}
+
+.adress__link--contact-color {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .container__footer {
@@ -37,19 +40,19 @@
 .company-soc {
     margin-left: 70px;
     margin-right: 93px;
-    &__text {
+    .company-soc__text {
         @include font($primary-font, 700, 14px, 1.14, 0.03em);
         text-transform: uppercase;
         color: $primary-color;
         margin-bottom: 20px;
     }
-    &__list {
+    .company-soc__list {
         display: flex;
     }
-    &__item:not(:first-child) {
+    .company-soc__item:not(:first-child) {
         margin-left: 10px;
     }
-    &__link {
+    .company-soc__link {
         background-color: rgba(255, 255, 255, 0.1);
         fill: $primary-color;
         transition:
@@ -70,7 +73,7 @@
 
 .form-send {
     display: flex;
-    &__input {
+    .form-send__input {
         width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -84,7 +87,7 @@
             color: rgba(255, 255, 255, 0.6);
         }
     }
-    &__btn--send {
+    .form-send__btn--send {
         display: flex;
         align-items: center;
         text-align: left;
@@ -98,7 +101,7 @@
         color: $primary-color;
         border-color: transparent;
     }
-    &__icon {
+    .form-send__icon {
         fill: $primary-color;
         margin-left: 10px;
     }

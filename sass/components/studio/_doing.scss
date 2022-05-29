@@ -1,22 +1,16 @@
-.doing {
-    padding-top: 0;
-    &__title {
-        color: $primary-text-color;
-        @include font(null, null, 36px, 1.17, 0.03em);
-        text-align: center;        
-        margin-bottom: 50px;
-    }
+.section--nopadding-top {
+    padding-top: 0;    
 }
 
 .doing-list {
     display: flex;
     margin-left: -30px;
-    &__item {
+    .doing-list__item {
         position: relative;
         width: calc(100% / 3 - 30px);
         margin-left: 30px;
     }
-    &__title {
+    .doing-list__title {
         @extend %flex-ai-jc;
         @include font($primary-font, null, 14px, 1.14, 0.03em);
         text-transform: uppercase;

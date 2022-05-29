@@ -7,6 +7,7 @@ p {
 
 ul,
 ol {
+    list-style: none;
     padding-left: 0;
     margin: 0;
 }
@@ -20,30 +21,14 @@ body {
     background-color: $primary-color;
 }
 
-.link {
+a {
     text-decoration: none;
     font-style: normal;
-}
-
-.list {
-    list-style: none;
 }
 
 .logo {
     @include font($secondary-font, 700, 26px, 1.19, 0.03em);
     color: $accent-color;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .icon-soc-link {

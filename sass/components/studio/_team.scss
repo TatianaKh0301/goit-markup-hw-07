@@ -1,33 +1,27 @@
-.team {
+.section--other-background {
     background-color: $secondary-bgcolor;
-    &__title {
-        color: $primary-text-color;
-        @include font(null, null, 36px, 1.17, 0.03em);
-        text-align: center;        
-        margin-bottom: 50px;
-    }
 }
 
 .team-list {
     display: flex;
     margin-left: -30px;
-    &__item {
+    .team-list__item {
         width: calc(100% / 4 - 30px);
         margin-left: 30px;
         background-color: $primary-color;
         box-shadow: 0px 3px 1px $primary-rgba-color, 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-    &__wrap {
+    .team-list__wrap {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    &__title {
+    .team-list__title {
         @include font(null, 500, 16px, 1.19, 0.03em);
         text-align: center;        
         color: $primary-text-color;
         margin-bottom: 10px;
     }
-    &__text {
+    .team-list__text {
         @include font(null, null, 16px, 1.19, 0.03em);
         text-align: center;        
         color: $secondary-text-color;
@@ -35,13 +29,13 @@
     }
 }
 
-.team-soc-list {
+.soc-list {
     display: flex;
     justify-content: center;
-    &__item:not(:first-child) {
+    .soc-list__item:not(:first-child) {
             margin-left: 10px;
         }
-    &__link {
+    .soc-list__link {
         background-color: $primary-color;
         fill: $color-link;
         transition:

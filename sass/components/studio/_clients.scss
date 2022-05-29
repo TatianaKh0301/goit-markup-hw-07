@@ -1,11 +1,4 @@
-.clients__title {
-    @include font($primary-font, null, 36px, 1.17, 0.03em);
-    text-align: center;    
-    color: $primary-text-color;
-    margin-bottom: 50px;
-}
-
-.clients__list {
+.clients {
     display: flex;
     margin-left: -30px;
 }

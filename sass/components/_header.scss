@@ -1,13 +1,14 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    &__logo {
+    header__logo {
         padding-top: 25px;
         padding-bottom: 25px;
         margin-right: 93px;
-        &--color {
-            color: $header-logo-color;
-        }
     }
+}
+
+.logo__header--color {
+    color: $header-logo-color;
 }
 
 .navigation {

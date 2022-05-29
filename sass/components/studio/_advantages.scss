@@ -1,9 +1,9 @@
 .advantages-list {
     display: flex;
-    &__item:not(:last-child) {
+    .advantages-list__item:not(:last-child) {
         margin-right: 30px;
     }
-    &__icon-wrap {
+    .advantages-list__icon-wrap {
         width: 270px;
         height: 120px;
         background-color: $secondary-bgcolor;
@@ -11,13 +11,13 @@
         @extend %flex-ai-jc;
         margin-bottom: 30px;
     }
-    &__title {
+    .advantages-list__title {
         @include font(null, null, 14px, 1.14, 0.03em);
         text-transform: uppercase;
         color: $primary-text-color;
         margin-bottom: 10px;
     }
-    &__text {
+    .advantages-list__text {
         @include font(null, null, 14px, 1.71, 0.03em);
         color: $secondary-text-color;
     }
